@@ -1,0 +1,14 @@
+# Invoice Agent Dependencies
+# Install with: uv pip install -r requirements.txt
+# For fastest installation, use uv: https://github.com/astral-sh/uv
+
+google-generativeai
+pydantic
+asyncio
+python-dotenv
+fastapi
+uvicorn
+requests
+websockets
+streamlit
+stripe
