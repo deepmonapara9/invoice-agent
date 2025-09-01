@@ -181,39 +181,6 @@ To view created invoices and customers:
 3. Navigate to **Invoices** to see generated invoices
 4. Use test mode for development
 
-## 🚨 Troubleshooting
-
-### Common Issues
-
-1. **"Module not found" errors**
-   ```bash
-   uv pip install -r requirements.txt
-   ```
-
-2. **API key errors**
-   - Check your `.env` file has correct API keys
-   - Ensure environment variables are loaded
-
-3. **Stripe connection issues**
-   - Verify your Stripe API key is valid
-   - Check if you're using the correct key (test vs live)
-
-4. **Port already in use**
-   ```bash
-   # Find process using port 8000
-   lsof -ti:8000 | xargs kill -9
-   
-   # Or use different port
-   uvicorn main:app --port 8001
-   ```
-
-### Debug Mode
-
-Run with debug logging:
-```bash
-LOG_LEVEL=debug uvicorn main:app --reload
-```
-
 ## 🤝 Contributing
 
 1. Fork the repository
